@@ -68,7 +68,160 @@ def check_original_sentences():
 
 
 
+def catch_trick2():
+    pattern = re.compile(r'(?<=(\.\d))\d{0,6}(\s{0,3}万元)', flags=re.X)
 
+    for i in os.listdir('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
+        # sss = convert2txt('/home/html/' + i)
+        with open("/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
+            sss = rf.read()
+            print("{}       ####################################\n".format(i))
+            reg_out = re.findall(pattern, sss)
+
+            if len(reg_out) !=0 :
+                for row in reg_out:
+                    for i in row:
+                        print(i)
+def catch_trick3():
+    pattern = re.compile(r'美元', flags=re.X)
+
+    for i in os.listdir('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
+        # sss = convert2txt('/home/html/' + i)
+        with open("/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
+            sss = rf.read()
+            print("{}       ####################################\n".format(i))
+            reg_out = re.findall(pattern, sss)
+
+            if len(reg_out) !=0 :
+                for row in reg_out:
+                    for i in row:
+                        print(i)
+
+def catch_trick4():
+    pattern = re.compile(r'((?:[^\d.,;()]{3,8}指[^\d.,;()]{8,18}\n+)(?:[^\d.,;()]{3,8}指[^\d.,;()]{8,18}\n+)(?:[^\d.,;()]{3,8}指[^\d.,;()]{8,18}\n+))', flags=re.X)
+
+    for i in os.listdir('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
+        # sss = convert2txt('/home/html/' + i)
+        with open("/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
+            sss = rf.read()
+        print("{}       ####################################\n".format(i))
+        reg_out = re.findall(pattern, sss)
+
+        if len(reg_out) !=0 :
+            for row in reg_out:
+                print(str(row))
+
+
+
+
+def catch_trick5():
+
+    #pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
+
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
+        # sss = convert2txt('/home/html/' + i)
+        with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
+            sss = rf.read()
+        print("{}       ####################################\n".format(i))
+        sss = re.sub(r'[\s\n]', '', sss)  # 把所有空格回车去掉，表格的变动信息不要了，此任务不需要
+
+        reg_out = re.findall(r'<td>[^<>]+</td><td>指</td><td>[^<>]+</td>',sss)
+
+        if len(reg_out) !=0 :
+            for row in reg_out:
+                print(str(row))
+
+
+def catch_trick6():
+
+    #pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
+
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
+        # sss = convert2txt('/home/html/' + i)
+        with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
+            sss = rf.read()
+
+        sss = re.sub(r'[\s\n]', '', sss)  # 把所有空格回车去掉，表格的变动信息不要了，此任务不需要
+        sss = re.sub(r'<[^<>]>','',sss)
+        reg_out = re.findall(r'(?<!\d)[\d,，%.]+[万千]?股[^股，。；\s\n]{0，10}(股份|股)',sss)
+
+        if len(reg_out) !=0 :
+            print("{}       ####################################\n".format(i))
+            for row in reg_out:
+                print(str(row))
+
+def catch_trick7():
+
+    #pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
+
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
+        # sss = convert2txt('/home/html/' + i)
+        with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
+            sss = rf.read()
+
+        sss = re.sub(r'[\s\n]', '', sss)  # 把所有空格回车去掉，表格的变动信息不要了，此任务不需要
+        sss = re.sub(r'<[^<>]>','',sss)
+        reg_out = re.findall(r'([\d.]+%的?(?:股权|股份|权益))',sss)
+
+        if len(reg_out) !=0 :
+            print("{}       ####################################\n".format(i))
+            for row in reg_out:
+                print(str(row))
+
+def catch_trick8():
+    from htmlconvert2text import convert2txt
+    def read_train_res():
+        with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
+            train_res = rf.read()
+        return train_res
+    train_re = read_train_res()
+    #pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
+
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2000:20]:
+        # sss = convert2txt('/home/html/' + i)
+        sss,_ = convert2txt("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i)
+
+
+        row_train_re = re.search(r'{}[^\n。]+\n'.format(i.split(".")[0]),train_re).group()[:-1]
+        print("###########################################################{}".format(i))
+        for index, res_enti in enumerate(row_train_re.split('\t')) :
+
+            if len(res_enti)>1:
+                print("@@@this is the {}th key_value{}".format(index,res_enti))
+                res_find = re.findall(r'{}'.format(res_enti), sss)
+
+                if len(res_find)>0:
+                    print(res_find)
+                else:
+                    print("@@@")
+
+def catch_trick88():
+    from htmlconvert2text import convert2txt
+    def read_train_res():
+        with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
+            train_res = rf.read()
+        return train_res
+
+    train_re = read_train_res()
+    # pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
+
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[
+             0:2000:20]:
+        # sss = convert2txt('/home/html/' + i)
+        sss, ent_str = convert2txt("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/" + i)
+
+        row_train_re = re.search(r'{}[^\n。]+\n'.format(i.split(".")[0]), train_re).group()[:-1]
+        print("###########################################################{}".format(i))
+        for index, res_enti in enumerate(row_train_re.split('\t')):
+
+            if len(res_enti) > 1:
+                print("@@@this is the {}th key_value{}".format(index, res_enti))
+                res_find = re.findall(r'{}'.format(res_enti), ent_str)
+
+                if len(res_find) > 0:
+                    print(res_find)
+                else:
+                    print("@@@")
 if __name__=='__main__':
-    # catch_trick()
-    check_original_sentences()
+    catch_trick88()
+    # check_original_sentences()

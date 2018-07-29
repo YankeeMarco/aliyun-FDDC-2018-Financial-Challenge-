@@ -6,7 +6,7 @@
         <remote-mappings server-id="python@sftp://root@192.168.50.8:22/root/miniconda3/envs/keras_py36/bin/python">
           <settings>
             <list>
-              <mapping local-root="$PROJECT_DIR$" remote-root="/home/aliyun-FDDC-2018-Financial-Challenge-" />
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-" />
             </list>
           </settings>
         </remote-mappings>

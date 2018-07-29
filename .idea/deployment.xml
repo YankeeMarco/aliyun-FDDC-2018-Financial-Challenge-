@@ -5,7 +5,7 @@
       <paths name="root@192.168.50.8:22">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/aliyun-FDDC-2018-Financial-Challenge-" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>

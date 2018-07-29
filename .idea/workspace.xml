@@ -2,9 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9139a65-9f95-44fc-a0fb-f3898c9a7c79" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/remote-mappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aliyunChallenge_data_wrangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/aliyunChallenge_data_wrangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_regex_outputs.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_regex_outputs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chongzu.train" beforeDir="false" afterPath="$PROJECT_DIR$/chongzu.train" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlconvert2text.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlconvert2text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ltp_segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/ltp_segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf_to_text_with_table_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf_to_text_with_table_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_1024_segmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/server_1024_segmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1000190.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1071179.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1104199.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1175927.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1215650.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1315026.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/142263.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/14630065.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/14789370.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/15268570.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/15463322.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/15536335.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/15593758.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1565536.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/15723364.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/15810326.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/15929420.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/16165550.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/16280475.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1636531.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/16488391.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1663537.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/16707690.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1679873.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/16874673.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1705029.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1733626.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1770217.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1786672.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1808641.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1823321.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1832842.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1844681.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1860704.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/18832971.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1893424.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/1922537.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/19338924.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/2027293.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/20496151.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/2221293.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/2341318.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/269970.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/295477.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/322217.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/357717.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/397184.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/481617.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/4942315.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/538684.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/6131030.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/68704.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/79647.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/856243.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/904358.text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_text_dir/9891732.text" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,8 +78,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$check_regex_outputs.coverage" NAME="check_regex_outputs Coverage Results" MODIFIED="1532262647566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$htmlconvert2text.coverage" NAME="htmlconvert2text Coverage Results" MODIFIED="1532252398713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$check_regex_outputs.coverage" NAME="check_regex_outputs Coverage Results" MODIFIED="1532858823904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$tokenize_enti_targets.coverage" NAME="tokenize_enti_targets Coverage Results" MODIFIED="1532868748354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$htmlconvert2text.coverage" NAME="htmlconvert2text Coverage Results" MODIFIED="1532712692340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$pdf_to_text_with_table_tags.coverage" NAME="pdf_to_text_with_table_tags Coverage Results" MODIFIED="1532101996555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -34,52 +99,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="142263.text" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_text_dir/142263.text">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="27" selection-start-column="27" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="397184.text" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_text_dir/397184.text">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="1000190.text" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_text_dir/1000190.text">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1104199.text" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_text_dir/1104199.text">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="32" selection-start-column="32" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1315026.text" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_text_dir/1315026.text">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10203">
-              <caret line="537" selection-start-line="537" selection-end-line="537" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check_regex_outputs.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="check_regex_outputs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/check_regex_outputs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1121">
-              <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+            <state relative-caret-position="186">
+              <caret line="195" column="32" selection-start-line="195" selection-start-column="32" selection-end-line="195" selection-end-column="32" />
               <folding>
                 <element signature="e#14#27#0" expanded="true" />
               </folding>
@@ -87,29 +111,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chongzu.train" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chongzu.train">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2318">
-              <caret line="122" selection-start-line="122" selection-end-line="122" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="htmlconvert2text.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/htmlconvert2text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+            <state relative-caret-position="349">
+              <caret line="103" column="11" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="11" />
+              <folding>
+                <element signature="e#14#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server_1024_segmentation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_1024_segmentation.py">
+      <file leaf-file-name="tokenize_enti_targets.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state relative-caret-position="456">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="e#14#23#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,22 +139,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>佛ft</find>
-      <find>广东科源电气有限公司</find>
-      <find>市场法</find>
-      <find>70%股权</find>
-      <find>亿元</find>
-      <find>交易对方</find>
-      <find>[^。|]+(交易对方|标的资产)[^。|]+。</find>
-      <find>[^。|]+总计[^。|]+。</find>
-      <find>总计</find>
-      <find>交易概</find>
       <find>标的[^为是][为是][^，、；。]+、</find>
       <find>具体方案</find>
       <find>交易</find>
       <find>转让</find>
       <find>、四川攀钢梅塞尔气体产品有限公司 40% 股权和攀钢钒钛本</find>
       <find>攀钢钒钛本部</find>
+      <find>([\d.]+%的?(?:股权|股份|权益))</find>
+      <find>(收益现值法|资产基础法|基准地价修正法|市场比较法|收益法|成本法|成本加[和合]法)</find>
+      <find>([\d.%]债权|[\s\d.%]+股权)</find>
+      <find>((?&lt;=\s)[\d.%]债权|[\s\d.%]+股权)</find>
+      <find>(?&lt;=\d),(?=\d[^股]{8,16})</find>
+      <find>(?&lt;=\s)[\d，]+股[^\s]+</find>
+      <find>(?&lt;=\s)[\d,，]+股[^\s]+</find>
+      <find>(?&lt;!\d)[\d,，]+股[^\s]+</find>
+      <find>(?&lt;!\d)[\d,，]+股[^股，。；\s\n]{0，10}{}</find>
+      <find>(?&lt;=\d),(?=\d[^股]{8})</find>
+      <find>segmentor</find>
+      <find>。</find>
+      <find>3th key_value\n@@@</find>
+      <find>[^0]th key_value\w+\n@@@</find>
+      <find>th key_value[^\n]+\n@@@</find>
+      <find>[^0]th key_value[\w{2,4}、]{2,44}\n@@@</find>
+      <find>((\w\w|\w\w\w|\w\w\w\w)[、/])</find>
+      <find>([\u4e00-\u9eff]{2,40}[()、/])</find>
+      <find>/</find>
+      <find>、</find>
+      <find>.</find>
+      <find>\.</find>
+      <find>[^0]th key_value[^\n]+\n@@@</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,8 +183,12 @@
         <option value="$PROJECT_DIR$/check_pdf_titles.py" />
         <option value="$PROJECT_DIR$/aliyunChallenge_data_wrangle.py" />
         <option value="$PROJECT_DIR$/test_text_dir/1000190.text" />
+        <option value="$PROJECT_DIR$/test_text_dir/entity16165550" />
+        <option value="$PROJECT_DIR$/15612588.html" />
+        <option value="$PROJECT_DIR$/ltp_segmentation.py" />
         <option value="$PROJECT_DIR$/htmlconvert2text.py" />
         <option value="$PROJECT_DIR$/check_regex_outputs.py" />
+        <option value="$PROJECT_DIR$/tokenize_enti_targets.py" />
       </list>
     </option>
   </component>
@@ -163,10 +202,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="33" />
-    <option name="y" value="114" />
-    <option name="width" value="735" />
-    <option name="height" value="696" />
+    <option name="x" value="2324" />
+    <option name="y" value="195" />
+    <option name="width" value="490" />
+    <option name="height" value="464" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -195,7 +234,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -214,7 +253,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.check_regex_outputs">
+  <component name="RunManager" selected="Python.tokenize_enti_targets">
     <configuration name="check_regex_outputs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aliyun-FDDC-2018-Financial-Challenge-" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,7 +292,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="pdf_to_text_with_table_tags" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tokenize_enti_targets" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aliyun-FDDC-2018-Financial-Challenge-" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -266,7 +305,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pdf_to_text_with_table_tags.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tokenize_enti_targets.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -274,14 +313,14 @@
     </configuration>
     <list>
       <item itemvalue="Python.htmlconvert2text" />
-      <item itemvalue="Python.pdf_to_text_with_table_tags" />
       <item itemvalue="Python.check_regex_outputs" />
+      <item itemvalue="Python.tokenize_enti_targets" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tokenize_enti_targets" />
         <item itemvalue="Python.check_regex_outputs" />
         <item itemvalue="Python.htmlconvert2text" />
-        <item itemvalue="Python.pdf_to_text_with_table_tags" />
       </list>
     </recent_temporary>
   </component>
@@ -308,32 +347,57 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="23" width="735" height="1264" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.17456897" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32978722" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32978722" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.48404256" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23111111" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3288889" />
-      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3288889" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.3288889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44858155" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3297414" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.1746454" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32978722" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12153518" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.17456897" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.057112068" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3288889" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.48404256" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.3288889" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32978722" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -353,46 +417,14 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="154" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="reg_out[2]" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_text_dir/142263.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" lean-forward="true" selection-start-column="27" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/397184.text">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1000190.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1104199.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1315026.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10203">
-          <caret line="537" selection-start-line="537" selection-end-line="537" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test_text_dir/397184.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1000190.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1104199.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1315026.text" />
     <entry file="file://$PROJECT_DIR$/chongzu.train">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2318">
@@ -453,20 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="1067" selection-start-line="1067" selection-end-line="1067" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ltp_segmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/1236336389/2020033751/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -475,9 +493,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seg_test.tex" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/1236336389/2020033751/re.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -492,108 +507,166 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1733626.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1808641.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/14630065.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1175927.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1922537.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1071179.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/142263.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/397184.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1000190.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1104199.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/1315026.text" />
+    <entry file="file://$PROJECT_DIR$/test_text_dir/entity481617">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_text_dir/entity6131030">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_text_dir/entity15929420">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_city_names.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_text_dir/entity16165550">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/aliyunChallenge_data_wrangle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
+        <state relative-caret-position="386">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/re.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3987">
-          <caret line="279" selection-start-line="279" selection-end-line="279" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1733626.text">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1808641.text">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/14630065.text">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1175927.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret column="369" selection-start-column="369" selection-end-column="369" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1922537.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret column="6880" selection-start-column="6876" selection-end-column="6880" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1071179.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret column="120" selection-start-column="120" selection-end-column="120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_1024_segmentation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="95">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htmlconvert2text.py">
+    <entry file="file://$PROJECT_DIR$/test_text_dir/text295477">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+        <state relative-caret-position="209">
+          <caret column="553" selection-start-column="553" selection-end-column="553" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/142263.text">
+    <entry file="file://$PROJECT_DIR$/15612588.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        <state relative-caret-position="198">
+          <caret line="1760" column="8" selection-start-line="1760" selection-start-column="7" selection-end-line="1760" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/397184.text">
+    <entry file="file://$PROJECT_DIR$/test_text_dir/entity68704">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1000190.text">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="131">
+          <caret line="1657" selection-start-line="1657" selection-end-line="1657" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1104199.text">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        <state relative-caret-position="273">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/sre_compile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="552" selection-start-line="552" selection-end-line="552" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/sre_parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="843" selection-start-line="843" selection-end-line="843" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_text_dir/text1315026">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret column="223" selection-start-column="222" selection-end-column="223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5531">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/re.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="212" selection-start-line="212" selection-end-line="212" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chongzu.train">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2318">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_text_dir/1315026.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10203">
-          <caret line="537" selection-start-line="537" selection-end-line="537" />
+        <state relative-caret-position="221">
+          <caret line="2748" column="11" selection-start-line="2748" selection-start-column="10" selection-end-line="2748" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/check_regex_outputs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1121">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="43" selection-end-line="59" selection-end-column="43" />
+        <state relative-caret-position="186">
+          <caret line="195" column="32" selection-start-line="195" selection-start-column="32" selection-end-line="195" selection-end-column="32" />
           <folding>
             <element signature="e#14#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltp_segmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlconvert2text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="103" column="11" selection-start-line="103" selection-start-column="6" selection-end-line="103" selection-end-column="11" />
+          <folding>
+            <element signature="e#14#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#14#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

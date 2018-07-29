@@ -1,10 +1,11 @@
+#coding=utf-8
+
 import os
 from pyltp import Segmentor
 from htmlconvert2text import  convert2txt
 from pyltp import NamedEntityRecognizer
 from pyltp import Postagger
 # from pyltp import SentenceSplitter
-# sents = SentenceSplitter.split('元芳你怎么看？我就趴窗口上看呗！')
 LTP_DATA_DIR = "/home/mm/Downloads/ltp_data_v3.4.0/"
 ner_model_path = os.path.join(LTP_DATA_DIR, 'ner.model')
 recognizer = NamedEntityRecognizer() # 初始化实例
@@ -13,8 +14,8 @@ pos_model_path = os.path.join(LTP_DATA_DIR, 'pos.model')  # 词性标注模型�
 
 cws_model_path = os.path.join(LTP_DATA_DIR, 'cws.model')
 
-source_path="/home/mm/Downloads/round1_train_20180518/dingzeng/html/"
-out_path="/home/mm/aliyunChallenge/"
+source_path="/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
+out_path="/home/mm/FDDC_datasets_text_dir/chongzu/"
 listdir = os.listdir(source_path)
 postagger = Postagger() # 初始化实例
 postagger.load(pos_model_path)  # 加载模型
@@ -22,7 +23,7 @@ postagger.load(pos_model_path)  # 加载模型
 segmentor = Segmentor()  # 初始化实例
 segmentor.load(cws_model_path)  # 加载模型
 for i in listdir[0:1]:
-    html_text = convert2txt(source_path+i)
+    html_text,entity_string = convert2txt(source_path+i)
     words = segmentor.segment(html_text)  # 分词
     postags = postagger.postag(words)  # 词性标注
     netags = recognizer.recognize(words, postags)  # 命名实体识别
@@ -30,6 +31,7 @@ for i in listdir[0:1]:
 
     temp_entity=""
     new_list = []
+    """以下是对字符串序列中含有实体名称的部分，重新结合在一起，去掉分词造成的间隔，然后在实体前后加缀一个特殊符号{NER#}"""
     for i,x in enumerate(words):
         if (i in indices) and ((i+1) in indices) and (i-1 not in indices):
             temp_entity=x
@@ -37,14 +39,15 @@ for i in listdir[0:1]:
             temp_entity+=x
         elif (i-1 in indices) and (i in indices)  and (i+1 not in indices):
             temp_entity+=x
-            new_list.append(temp_entity)
+            new_list.append("NER#B"+temp_entity+"NER#E")
         else:
             new_list.append(x)
-    print(new_list)
+    for i in new_list:
+        print(i)
 
-    with open("/home/mm/aliyunChallenge/seg_test_while_totalwords.txt", "w") as wf:
+    with open("/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/seg_test_while_totalwords.txt", "w") as wf:
         # wf.write(str(list(words)))
-        wf.write("-".join(new_list))
+        wf.write("".join(new_list))
 segmentor.release()  # 释放模型
 
 
