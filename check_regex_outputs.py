@@ -116,9 +116,8 @@ def catch_trick4():
 
 def catch_trick5():
 
-    #pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
 
-    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2770:10]:
         # sss = convert2txt('/home/html/' + i)
         with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
             sss = rf.read()
@@ -128,13 +127,13 @@ def catch_trick5():
         reg_out = re.findall(r'<td>[^<>]+</td><td>指</td><td>[^<>]+</td>',sss)
 
         if len(reg_out) !=0 :
-            for row in reg_out:
-                print(str(row))
-
-
+            for i in reg_out:
+                first = i.split("</td><td>")[0][4:]
+                third = i.split("</td><td>")[2][:-5]
+                if '公司' in i:
+                    print(first+'-->'+third)
 def catch_trick6():
 
-    #pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
 
     for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
         # sss = convert2txt('/home/html/' + i)
@@ -152,7 +151,6 @@ def catch_trick6():
 
 def catch_trick7():
 
-    #pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
 
     for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
         # sss = convert2txt('/home/html/' + i)
@@ -175,7 +173,6 @@ def catch_trick8():
             train_res = rf.read()
         return train_res
     train_re = read_train_res()
-    #pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
 
     for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2000:20]:
         # sss = convert2txt('/home/html/' + i)
@@ -203,7 +200,6 @@ def catch_trick88():
         return train_res
 
     train_re = read_train_res()
-    # pattern = re.compile(r'<td>[^<>]+</td>[^<>]+<td>[\u4e00-\u9fff]+指[^<>\u4e00-\u9fff]+</td>[^<>]+<td>[^<>]+</td>', flags=re.X)
 
     for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[
              0:2000:20]:
@@ -223,5 +219,5 @@ def catch_trick88():
                 else:
                     print("@@@")
 if __name__=='__main__':
-    catch_trick88()
+    catch_trick5()
     # check_original_sentences()
