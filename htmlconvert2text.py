@@ -22,7 +22,7 @@ def convert2txt(path1):
               </td>
               <td>
                北京数字天域科技股份有限公司朝阳分公司
-               提取出来成为键值对，格式’朝阳分公司/朝阳牛逼公司->北京数字天域科技股份有限公司朝阳分公司‘
+               提取出来成为键值对，格式’朝阳分公司/朝阳牛逼公司~北京数字天域科技股份有限公司朝阳分公司‘
         """
         # 先将html中的回车空格等等符号去掉
         texx = re.sub(r'[\s\n]', r'', texx)  # 把html中所有空格回车去掉，防止文档差错，表格的数据信息不要了，此任务不需要
@@ -37,7 +37,7 @@ def convert2txt(path1):
             first = i.split("</td><td>")[0][4:]
             third = i.split("</td><td>")[2][:-5]
             entity_string+=first
-            entity_string+='->'
+            entity_string+='~'
             entity_string+=third
             entity_string+=' '
         for i in list_money:
