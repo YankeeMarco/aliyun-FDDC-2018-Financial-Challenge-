@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9139a65-9f95-44fc-a0fb-f3898c9a7c79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlconvert2text.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlconvert2text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_test_tokenization.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tokenize_enti_targets.py" beforeDir="false" afterPath="$PROJECT_DIR$/tokenize_enti_targets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +16,7 @@
     <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$htmlconvert2text.coverage" NAME="htmlconvert2text Coverage Results" MODIFIED="1532712692340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$pdf_to_text_with_table_tags.coverage" NAME="pdf_to_text_with_table_tags Coverage Results" MODIFIED="1532101996555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$check_regex_outputs.coverage" NAME="check_regex_outputs Coverage Results" MODIFIED="1533024858647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$tokenize_enti_targets.coverage" NAME="tokenize_enti_targets Coverage Results" MODIFIED="1533026436788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$tokenize_enti_targets.coverage" NAME="tokenize_enti_targets Coverage Results" MODIFIED="1533031688039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -43,14 +43,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2350" />
+          <entry key="py" value="2844" />
           <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="15" />
-          <entry key="Python" value="2349" />
+          <entry key="Python" value="2843" />
           <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
@@ -58,16 +58,18 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="JSON" value="1" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
+          <entry key="json" value="1" />
           <entry key="py" value="6" />
-          <entry key="train" value="1" />
-          <entry key="txt" value="3" />
+          <entry key="train" value="2" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -90,19 +92,7 @@
         <entry file="file://$PROJECT_DIR$/htmlconvert2text.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="65" />
-              <folding>
-                <element signature="e#14#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="65" />
               <folding>
                 <element signature="e#14#23#0" expanded="true" />
               </folding>
@@ -111,9 +101,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output_test_tokenization.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2005">
+              <caret line="115416" column="9" lean-forward="true" selection-start-line="115416" selection-start-column="9" selection-end-line="115416" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1463">
+              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              <folding>
+                <element signature="e#14#23#0" expanded="true" />
+                <marker date="1533032586146" expanded="true" signature="763:1158" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FDDC_announcements_company_name_20180531.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret column="386" selection-start-column="384" selection-end-column="386" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ltp_segmentation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="391">
               <caret line="46" selection-start-line="46" selection-end-line="46" />
               <folding>
                 <element signature="e#15#24#0" expanded="true" />
@@ -126,17 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>######\n\n\w+</find>
-      <find>######\n\n.*/</find>
-      <find>(上市公司/|本公司/|公司/)</find>
-      <find>(公司/公司)</find>
-      <find>#\n\n.{0,15}上市公司</find>
-      <find>((上市公司|本公司|公司)/){3}</find>
-      <find>(?&lt;=\n|/)公司</find>
-      <find>\n[(本公司)(上市公司)(公司)/，、]</find>
-      <find>\n[(本公司)(上市公司)(公司)/，、]+</find>
-      <find>本公司[/、，]</find>
-      <find>本公司</find>
       <find>###\n\n[^-&gt;]{3,33}--&gt;</find>
       <find>标的公司</find>
       <find>###\n\n[^(标的公司)]+###\n</find>
@@ -156,6 +166,17 @@
       <find>[^/、]{0,3}公司(?=--&gt;)</find>
       <find>[^/、\n]{0,3}公司(?=--&gt;)</find>
       <find>[^/、\n]{0,3}公司[/、][^-&gt;]*(?=--&gt;)</find>
+      <find>5</find>
+      <find>\t2</find>
+      <find>创业软件</find>
+      <find>&quot;[^:{},&quot;secFullName]+&quot;</find>
+      <find>&quot;[^:{}&quot;m]+&quot;</find>
+      <find>15500680</find>
+      <find>鑫粟投资</find>
+      <find>粟投资</find>
+      <find>,.</find>
+      <find>\t3</find>
+      <find>\t3\n指</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -222,6 +243,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\yankee\Documents\aliyun-FDDC-2018-Financial-Challenge-" />
@@ -345,13 +369,13 @@
     <frame x="34" y="-11" width="1327" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1477717" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1336982" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.39095315" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3069467" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.15508886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956383" />
@@ -359,7 +383,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956383" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.17456897" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.17932148" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.14378029" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32956383" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -408,18 +432,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tokenize_enti_targets.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tokenize_enti_targets.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -547,16 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ltp_segmentation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/15612588.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1838">
@@ -578,23 +580,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chongzu.train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="2748" column="11" selection-start-line="2748" selection-start-column="10" selection-end-line="2748" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seg_test_while_totalwords.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3195" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_test_tokenization.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/check_regex_outputs.py">
@@ -607,22 +595,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chongzu.train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="1307" column="8" selection-start-line="1307" selection-end-line="1307" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ltp_segmentation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/htmlconvert2text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="65" />
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="65" />
           <folding>
             <element signature="e#14#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FDDC_announcements_company_name_20180531.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret column="386" selection-start-column="384" selection-end-column="386" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output_test_tokenization.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2005">
+          <caret line="115416" column="9" lean-forward="true" selection-start-line="115416" selection-start-column="9" selection-end-line="115416" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+        <state relative-caret-position="-1463">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding>
             <element signature="e#14#23#0" expanded="true" />
+            <marker date="1533032586146" expanded="true" signature="763:1158" ph="..." />
           </folding>
         </state>
       </provider>

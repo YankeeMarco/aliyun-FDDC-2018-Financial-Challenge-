@@ -13,11 +13,21 @@ class tokenization():
         self.segmentor = Segmentor()  # 初始化实例
         self.segmentor.load(self.cws_model_path)  # 加载模型
         self.train_res = self.read_train_res() # 读取tag文本,防止里面有空格去掉空格
+        self.all_co_names = self.FDDC_co_list()
 
     def read_train_res(self):
         with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
             train_res = rf.read()
         return train_res
+    def FDDC_co_list(self):
+        all_co_names = []
+        with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/FDDC_announcements_company_name_20180531.json','r') as rf:
+            for text in re.findall(r'(?<=")[^:{}"m]+(?=")', rf.read()):
+                if ',' in text:
+                    all_co_names+=re.split(r',',text)
+                else:
+                    all_co_names.append(text)
+        return all_co_names
 
     def tokenize_enti(self,path11):
         texx, entity_string = convert2txt(path11)
@@ -48,14 +58,16 @@ class tokenization():
                         niki, fullna = re.split(r'~', arrow)
                         # 即使split出来对方是空值，也填进去
 
-                        niki_split = re.split(r'[/、]',niki)
-                        fulna_split_comma = re.split(r'，', fullna)
-                        if '，' not in fullna:
-                            fulna_split_sep = re.split(r'、', fullna)
-                            res_paired[indi] += fulna_split_sep
+                        # niki_split = re.split(r'[/、]',niki)
+                        fullna_first = fullna.split('，')[0]
+                        if '，' in fullna and ('、：' not in fullna_first) and len(fullna_first)<14:
+                            # fulna_split_comma = re.split(r'，', fullna)
+                        # if '，' not in fullna:
+                        #     fulna_split_sep = re.split(r'、', fullna)
+                        #     res_paired[indi] += fulna_split_sep
 
-                        res_paired[indi] += [ x if not re.search(r'(公司|人$|资产|标的|交易|对方|对手|单位)', x)  else '' for x in  niki_split]
-                        res_paired[indi].append(fulna_split_comma[0])
+                        # res_paired[indi] += [ x if not re.search(r'(公司|人$|资产|标的|交易|对方|对手|单位)', x)  else '' for x in  niki_split]
+                            res_paired[indi].append(fullna_first)
                         """ 由全称查简称时候要避免 公司/本公司/上市公司/发起人/申请人/,
                             含有这几个字的要剔除"""
 
@@ -84,16 +96,16 @@ class tokenization():
             words = re.sub(r'\n+', '\n', words)
             """把words中所有是结果键值的，后缀上tab键和结果索引号。否则后缀tab键和字母o"""
 
-            for indi2,res in enumerate(res_paired[1:]):
+            for indi2,res in enumerate(res_paired):
                 # 表中的小表，可能有一个或多个成员，遍历一下,包括顿号分割的那些都可以标出来了，不影响合并好的实体字符串。
                 for sub_res in res:
                     if len(sub_res) >1:
-                        words= re.sub(r'(?<={})(?=\n)'.format(sub_res), '\t{}'.format(indi2+1),words)
+                        words= re.sub(r'(?<={})(?=\n)'.format(sub_res), '\t{}'.format(indi2),words)
                 # train——result标注完了，现在标注o,就是把非数字结尾的行加上tab和o
             words = re.sub(r'(?<!\t\d)(?=\n)', '\to', words)
             with open('output_test_tokenization.txt', 'a') as af:
                 af.write(words)
-            print(words+'####################################')
+            # print(words+'####################################')
             # print("%%%%%%%%%%%%%%%%%%%%%%%%this is {}".format(i))
 
 
