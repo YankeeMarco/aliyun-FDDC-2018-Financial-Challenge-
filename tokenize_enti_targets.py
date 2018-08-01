@@ -51,7 +51,7 @@ class tokenization():
         entities_arrows_list = entities_arrows_list[:-1]
         # 找出结果数据行并且把最后的回车符号去掉
         patt_index = re.findall(r'\d{4,10}', path11)[0]
-        res_row = re.findall(r'(?<=\n){}[^\n]+(?=\n)'.format(patt_index), self.train_res)
+        res_rows = re.findall(r'(?<=\n){}[^\n]+(?=\n)'.format(patt_index), self.train_res)
 
 
          # 以下是整理train——res
@@ -60,7 +60,7 @@ class tokenization():
             使用正则提取对应的简称或全称，如果有顿号，把那些字串也分开提取，作为标注的标的，当然是先
             把字符长度小的匹配出来，分词之后也是先把长度长的连起来。没问题的"""
         res_paired = {}  # 临时定义一个res的列表，存储修改后的train res
-        for index, result_row in enumerate(res_row):
+        for index, result_row in enumerate(res_rows):
 
             for indi, res_value in enumerate(re.split('\t', result_row)):
                 if indi == 0:
@@ -103,8 +103,7 @@ class tokenization():
             for ent in entities:
                 countit +=1
                 print(countit)
-                print('&&&&&&&&&&&&&&&&&&&&&&&'+ent)
-            for ent in entities + self.all_co_names:
+            for ent in entities:
                 # 把words中所有是实体的中间去掉空格。使用双层sub
                 # 正则还是要多注释啊
                 """ re.sub(r'(?<=\w)(?=\w)'','\s?',ent) 是把实体里面的每个字符中间插入“\s?”
@@ -129,13 +128,11 @@ class tokenization():
                 目的是好的，就是让模型更容易找到目标，模型不需要判断开始和结束，
                 但是这样的正则太难了， 我无法将所有合适的实体
                 全部抽出来，而导致标注的缺失，那么还是把任务给模型了"""
-            res_paired_enu = enumerate(res_paired)
-            for index2,column in res_paired_enu:
-                for indi2, res in enumerate(res):
+            for index, tags_list in res_paired:
                 # 表中的小表，可能有一个或多个成员，遍历一下,包括顿号分割的那些都可以标出来了，不影响合并好的实体字符串。
-                    for sub_res in res:
+                    for sub_res in tags_list:
                         if len(sub_res) >1:
-                            words= re.sub(r'(?<={})(?=\n)'.format(sub_res), '\t{}'.format(indi2),words)
+                            words= re.sub(r'(?<={})(?=\n)'.format(sub_res), '\t{}'.format(index),words)
                 # train——result标注完了，现在标注o,就是把非数字结尾的行加上tab和o
             words = re.sub(r'(?<!\t\d)(?=\n)', '\to', words)
             with open('output_test_tokenization.txt', 'a') as af:
