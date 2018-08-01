@@ -116,22 +116,25 @@ def catch_trick4():
 
 def catch_trick5():
 
+    with open('entity_string_test.txt','a') as af:
 
-    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2770:10]:
-        # sss = convert2txt('/home/html/' + i)
-        with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
-            sss = rf.read()
-        print("{}       ####################################\n".format(i))
-        sss = re.sub(r'[\s\n]', '', sss)  # 把所有空格回车去掉，表格的变动信息不要了，此任务不需要
+        for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2770:10]:
+            # sss = convert2txt('/home/html/' + i)
+            with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
+                sss = rf.read()
+            print("{}       ####################################\n".format(i))
+            sss = re.sub(r'[\s\n]', '', sss)  # 把所有空格回车去掉，表格的变动信息不要了，此任务不需要
 
-        reg_out = re.findall(r'<td>[^<>]+</td><td>指</td><td>[^<>]+</td>',sss)
+            reg_out = re.findall(r'<td>[^<>]+</td><td>指</td><td>[^<>]+</td>',sss)
 
-        if len(reg_out) !=0 :
-            for i in reg_out:
-                first = i.split("</td><td>")[0][4:]
-                third = i.split("</td><td>")[2][:-5]
-                if '公司' in i:
-                    print(first+'-->'+third)
+            if len(reg_out) !=0 :
+                for i in reg_out:
+                    first = i.split("</td><td>")[0][4:]
+                    third = i.split("</td><td>")[2][:-5]
+                    if '公司' in i:
+                        # print(first+'-->'+third)
+                        af.write(first+'-->'+third+'\n')
+
 def catch_trick6():
 
 
@@ -150,7 +153,6 @@ def catch_trick6():
                 print(str(row))
 
 def catch_trick7():
-
 
     for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
         # sss = convert2txt('/home/html/' + i)
