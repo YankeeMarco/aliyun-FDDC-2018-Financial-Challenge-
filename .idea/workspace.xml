@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/tokenize_enti_targets.py" line="103" />
+    <bookmark url="file://$PROJECT_DIR$/tokenize_enti_targets.py" line="105" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9139a65-9f95-44fc-a0fb-f3898c9a7c79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/aliyun-FDDC-2018-Financial-Challenge-.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aliyun-FDDC-2018-Financial-Challenge-.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlconvert2text.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlconvert2text.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output_test_tokenization.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output_test_tokenization.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tokenize_enti_targets.py" beforeDir="false" afterPath="$PROJECT_DIR$/tokenize_enti_targets.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$check_regex_outputs.coverage" NAME="check_regex_outputs Coverage Results" MODIFIED="1533100831978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$tokenize_enti_targets.coverage" NAME="tokenize_enti_targets Coverage Results" MODIFIED="1533133494016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$baidumap_location_mianyang_project.coverage" NAME="baidumap_location_mianyang_project Coverage Results" MODIFIED="1533116243226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
     <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$htmlconvert2text.coverage" NAME="htmlconvert2text Coverage Results" MODIFIED="1533107841742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$pdf_to_text_with_table_tags.coverage" NAME="pdf_to_text_with_table_tags Coverage Results" MODIFIED="1532101996555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$nerw2.coverage" NAME="nerw2 Coverage Results" MODIFIED="1533203163568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$check_regex_outputs.coverage" NAME="check_regex_outputs Coverage Results" MODIFIED="1533100831978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$tokenize_enti_targets.coverage" NAME="tokenize_enti_targets Coverage Results" MODIFIED="1533191860978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aliyun_FDDC_2018_Financial_Challenge_$baidumap_location_mianyang_project.coverage" NAME="baidumap_location_mianyang_project Coverage Results" MODIFIED="1533116243226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -43,21 +45,22 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5059" />
+          <entry key="py" value="6229" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="17" />
-          <entry key="Python" value="5058" />
+          <entry key="Python" value="6228" />
           <entry key="RegExp" value="1" />
         </counts>
       </usages-collector>
@@ -67,8 +70,8 @@
           <entry key="HTML" value="1" />
           <entry key="JSON" value="2" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="14" />
+          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="Python" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,50 +79,54 @@
           <entry key="html" value="1" />
           <entry key="json" value="2" />
           <entry key="md" value="1" />
-          <entry key="py" value="14" />
-          <entry key="train" value="5" />
-          <entry key="txt" value="13" />
+          <entry key="py" value="20" />
+          <entry key="train" value="7" />
+          <entry key="txt" value="14" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="check_regex_outputs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/check_regex_outputs.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2565">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="383">
+              <caret line="161" selection-start-line="161" selection-end-line="161" />
               <folding>
-                <element signature="e#14#27#0" expanded="true" />
+                <element signature="e#14#23#0" expanded="true" />
+                <element signature="e#862#887#0" />
+                <element signature="e#4706#4728#0" />
+                <element signature="e#5770#5950#1" />
+                <element signature="e#5990#6022#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="chongzu.train" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chongzu.train">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="4019" column="40" selection-start-line="4019" selection-start-column="40" selection-end-line="4019" selection-end-column="40" />
+            <state relative-caret-position="492">
+              <caret line="4800" column="11" selection-start-line="4800" selection-start-column="11" selection-end-line="4800" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FDDC_announcements_company_name_20180531.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FDDC_announcements_company_name_20180531.json">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nerw2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret column="4410" selection-start-column="4406" selection-end-column="4410" />
+            <state relative-caret-position="90">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tokenize_enti_targets.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/htmlconvert2text.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="116" column="103" lean-forward="true" selection-start-line="116" selection-start-column="67" selection-end-line="116" selection-end-column="107" />
+            <state relative-caret-position="390">
+              <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding>
                 <element signature="e#14#23#0" expanded="true" />
               </folding>
@@ -131,9 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\\u007f</find>
-      <find>\\u</find>
-      <find>[^\u4e00-\u9fcc]</find>
       <find>[\u4e00-\u9fcc]+</find>
       <find>[\u4e00-\u9fcca-zA-Z\*]+</find>
       <find>[\u4e00-\u9fcca-zA-Z\*()]+</find>
@@ -149,7 +153,6 @@
       <find>博泰服务</find>
       <find>%股</find>
       <find>指</find>
-      <find>print</find>
       <find>、</find>
       <find>\t\d{4}\t</find>
       <find>\t\d{1,6}\t</find>
@@ -161,6 +164,10 @@
       <find>[\s\n]?[\u4e00-\u9fcc，a-zA-Z.、/]+[\s\n]+指[\s\n]+[\u4e00-\u9fcc，a-zA-Z.、/]+[\s\n]?</find>
       <find>[\s\n]?[\u4e00-\u9fcc，a-zA-Z.、/（）]+[\s\n]+指[\s\n]+[\u4e00-\u9fcc，a-zA-Z.、/（）]+[\s\n]?</find>
       <find>[\s\n]?[\u4e00-\u9fcc，a-zA-Z.、/（）0-9]+[\s\n]+指[\s\n]+[\u4e00-\u9fcc，a-zA-Z.、/（）0-9]+[\s\n]?</find>
+      <find>9892634</find>
+      <find>\[</find>
+      <find>print</find>
+      <find>32221</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,6 +189,7 @@
         <option value="$PROJECT_DIR$/check_regex_outputs.py" />
         <option value="$PROJECT_DIR$/htmlconvert2text.py" />
         <option value="$PROJECT_DIR$/tokenize_enti_targets.py" />
+        <option value="$PROJECT_DIR$/nerw2.py" />
       </list>
     </option>
   </component>
@@ -190,9 +198,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="33" />
@@ -208,6 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,12 +225,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/python-crfsuite-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -250,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tokenize_enti_targets">
+  <component name="RunManager" selected="Python.nerw2">
     <configuration name="baidumap_location_mianyang_project" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aliyun-FDDC-2018-Financial-Challenge-" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,6 +274,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="check_regex_outputs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aliyun-FDDC-2018-Financial-Challenge-" />
@@ -288,6 +296,9 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="htmlconvert2text" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aliyun-FDDC-2018-Financial-Challenge-" />
@@ -307,6 +318,31 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="nerw2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="aliyun-FDDC-2018-Financial-Challenge-" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nerw2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="tokenize_enti_targets" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aliyun-FDDC-2018-Financial-Challenge-" />
@@ -326,15 +362,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.htmlconvert2text" />
       <item itemvalue="Python.check_regex_outputs" />
       <item itemvalue="Python.tokenize_enti_targets" />
       <item itemvalue="Python.baidumap_location_mianyang_project" />
+      <item itemvalue="Python.nerw2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.nerw2" />
         <item itemvalue="Python.tokenize_enti_targets" />
         <item itemvalue="Python.baidumap_location_mianyang_project" />
         <item itemvalue="Python.htmlconvert2text" />
@@ -365,59 +406,59 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="23" width="735" height="1264" extended-state="6" />
+    <frame x="35" y="-4" width="1325" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956383" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.17375886" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956383" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32956383" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.46614584" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3288889" />
-      <window_info anchor="right" id="SciView" order="5" weight="0.3288889" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20015638" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34131205" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.39095315" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28271407" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.16478191" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956383" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956383" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.17375886" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.06946688" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32956383" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3288889" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.3288889" />
       <window_info anchor="right" id="JSON Viewer" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.39095315" />
       <window_info anchor="right" id="Mongo Explorer" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32978722" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12153518" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.057112068" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32978722" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.17456897" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
-      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32978722" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.057112068" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3288889" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="5" weight="0.3288889" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.48404256" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32978722" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3288889" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.3288889" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,33 +476,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/htmlconvert2text.py</url>
-          <line>95</line>
+          <line>96</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/htmlconvert2text.py</url>
-          <line>97</line>
+          <line>98</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tokenize_enti_targets.py</url>
-          <line>129</line>
-          <option name="timeStamp" value="44" />
+          <line>115</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tokenize_enti_targets.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="48" />
+          <line>113</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tokenize_enti_targets.py</url>
-          <line>116</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tokenize_enti_targets.py</url>
-          <line>112</line>
-          <option name="timeStamp" value="50" />
+          <line>117</line>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -471,7 +507,6 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -492,30 +527,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chongzu.train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76361">
-          <caret line="4019" column="40" lean-forward="true" selection-start-line="4019" selection-start-column="40" selection-end-line="4019" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FDDC_announcements_company_name_20180531.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret column="4410" selection-start-column="4406" selection-end-column="4410" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#14#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/1236336389/2020033751/codecs.py" />
     <entry file="file://$PROJECT_DIR$/seg_test.tex" />
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/1236336389/2020033751/re.py" />
@@ -540,9 +551,6 @@
     <entry file="file://$PROJECT_DIR$/test_text_dir/entity481617" />
     <entry file="file://$PROJECT_DIR$/test_text_dir/entity6131030" />
     <entry file="file://$PROJECT_DIR$/test_text_dir/entity15929420" />
-    <entry file="file://$PROJECT_DIR$/china_city_names.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_text_dir/entity16165550" />
     <entry file="file://$PROJECT_DIR$/aliyunChallenge_data_wrangle.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -603,27 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FDDC_announcements_company_name_20180531.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret column="4410" selection-start-column="4406" selection-end-column="4410" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output_test_tokenization.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
           <caret line="26115" column="4" selection-start-line="26115" selection-start-column="4" selection-end-line="26115" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check_regex_outputs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-          <folding>
-            <element signature="e#14#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,49 +626,82 @@
       </provider>
     </entry>
     <entry file="file:///usr/lib/python3.5/re.py" />
-    <entry file="file://$PROJECT_DIR$/htmlconvert2text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#14#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.5/sre_compile.py" />
     <entry file="file:///usr/lib/python3.5/sre_parse.py" />
     <entry file="file:///usr/lib/python3.5/codecs.py" />
     <entry file="file://$PROJECT_DIR$/../baidumap_location_mianyang_project.py" />
     <entry file="file://$PROJECT_DIR$/neimenggukuangyechongzhu.txt" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/sre_parse.py">
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/sre_parse.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/codecs.py" />
+    <entry file="file://$PROJECT_DIR$/FDDC_announcements_company_name_20180531.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="381" selection-start-line="381" selection-end-line="381" />
+        <state relative-caret-position="60">
+          <caret column="4410" selection-start-column="4406" selection-end-column="4410" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/-422920084/-41365207/codecs.py">
+    <entry file="file://$USER_HOME$/miniconda3/envs/keras2/lib/python2.7/re.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3934">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        <state relative-caret-position="195">
+          <caret line="248" selection-start-line="248" selection-end-line="248" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chongzu.train">
+    <entry file="file://$USER_HOME$/miniconda3/envs/keras2/lib/python2.7/sre_compile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="4019" column="40" selection-start-line="4019" selection-start-column="40" selection-end-line="4019" selection-end-column="40" />
+        <state relative-caret-position="75">
+          <caret line="569" selection-start-line="569" selection-end-line="569" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_regex_outputs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="136" selection-start-line="136" selection-end-line="136" />
+          <folding>
+            <element signature="e#14#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tokenize_enti_targets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="116" column="103" lean-forward="true" selection-start-line="116" selection-start-column="67" selection-end-line="116" selection-end-column="107" />
+        <state relative-caret-position="383">
+          <caret line="161" selection-start-line="161" selection-end-line="161" />
+          <folding>
+            <element signature="e#14#23#0" expanded="true" />
+            <element signature="e#862#887#0" />
+            <element signature="e#4706#4728#0" />
+            <element signature="e#5770#5950#1" />
+            <element signature="e#5990#6022#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/china_city_names.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chongzu.train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="4800" column="11" selection-start-line="4800" selection-start-column="11" selection-end-line="4800" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlconvert2text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="31" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
           <folding>
             <element signature="e#14#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nerw2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
