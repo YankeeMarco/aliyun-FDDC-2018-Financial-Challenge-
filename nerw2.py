@@ -1,20 +1,34 @@
 import pycrfsuite
+import  re,os
+import time
 
-
-
-
-
-X_train =
-y_train =
-
+# time.sleep(8000)
+def data_generator_x():
+    for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
+        x,y =  tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+        yield x
+def data_generator_y():
+    for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
+        x,y = tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+        yield y
+def tokenit(path1):
+    with open(path1,'r') as rf:
+        strr = rf.read()
+        list_x_y = re.split(r'[\n\t]', strr)
+        x_train = list_x_y[0::2]
+        y_train = list_x_y[1::2]
+    return x_train[:-1], y_train
 
 trainer = pycrfsuite.Trainer(verbose=True)
+x = data_generator_x()
+y = data_generator_y()
+for i in range(2770):
+    trainer.append(next(x), next(y))
 
-
-print(type(trainer))
-# Submit training data to the trainer
-for xseq, yseq in zip(X_train, y_train):
-    trainer.append(xseq, yseq)
+ # Submit training data to the trainer
+# for xseq, yseq in zip(x_train, y_train):
+#     print("hh")
+#     trainer.append(xseq, yseq)
 
 # Set the parameters of the model
 trainer.set_params({
@@ -34,4 +48,4 @@ trainer.set_params({
 
 # Provide a file name as a parameter to the train function, such that
 # the model will be saved to the file when training is finished
-trainer.train('crf.model')
+trainer.train('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/crf.model')

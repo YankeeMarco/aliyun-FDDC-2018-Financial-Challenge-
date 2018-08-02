@@ -152,7 +152,7 @@ class tokenization():
             words_n_words += words
 
             # print(words)
-        with open('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+res_paired['00'][0]+'.txt', 'a') as af:
+        with open('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+res_paired['00'][0]+'.txt', 'w') as af:
             af.write(words_n_words)
             print(path11.split("/")[-1])
             # print(words)
@@ -163,5 +163,5 @@ class tokenization():
 if __name__=="__main__":
     path1 = "/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
     tnt = tokenization()
-    for i in os.listdir(path1):
+    for i in os.listdir(path1)[1336:]:
         tnt.tokenize_enti(path1+i)
