@@ -3,14 +3,14 @@ import  re,os
 import time
 
 # time.sleep(8000)
-def data_generator_x():
-    for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
-        x,y =  tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
-        yield x
-def data_generator_y():
-    for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
-        x,y = tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
-        yield y
+# def data_generator_x():
+#     for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
+#         x,y =  tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+#         yield x
+# def data_generator_y():
+#     for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
+#         x,y = tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+#         yield y
 def tokenit(path1):
     with open(path1,'r') as rf:
         strr = rf.read()
@@ -18,12 +18,19 @@ def tokenit(path1):
         x_train = list_x_y[0::2]
         y_train = list_x_y[1::2]
     return x_train[:-1], y_train
+x_train = []
+y_train =[]
+
+for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/')[:1000]:
+    x,y =  tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+    x_train += x
+    y_train += y
 
 trainer = pycrfsuite.Trainer(verbose=True)
-x = data_generator_x()
-y = data_generator_y()
-for i in range(2770):
-    trainer.append(next(x), next(y))
+# x = data_generator_x()
+# # y = data_generator_y()
+# for i in range(2770):
+trainer.append(x_train, y_train)
 
  # Submit training data to the trainer
 # for xseq, yseq in zip(x_train, y_train):
