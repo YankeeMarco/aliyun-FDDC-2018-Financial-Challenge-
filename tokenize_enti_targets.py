@@ -7,7 +7,7 @@ from htmlconvert2text import convert2txt
 
 class tokenization():
     def __init__(self):
-        self.LTP_DATA_DIR = "/home/mm/Downloads/ltp_data_v3.4.0/"
+        self.LTP_DATA_DIR = "/home/47_7/Downloads/ltp_data_v3.4.0/"
         self.cws_model_path = os.path.join(self.LTP_DATA_DIR, 'cws.model')
 
         self.segmentor = Segmentor()  # 初始化实例
@@ -16,7 +16,7 @@ class tokenization():
         # self.all_co_names = self.FDDC_co_list()
 
     def read_train_res(self):
-        with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
+        with open('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
             train_res = rf.read()
             train_res = re.sub(r'\(', '（', train_res)
             train_res = re.sub(r'\)', '）', train_res)
@@ -27,7 +27,7 @@ class tokenization():
     #     这里是用正则把所有上市公司简称/全称/历史名称都提取出来。
     #     :return: 生成的list
     #     """
-    #     with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/FDDC_announcements_company_name_20180531.json','r') as rf:
+    #     with open('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/FDDC_announcements_company_name_20180531.json','r') as rf:
     #         co_names_json = rf.read()
     #     all_co_names = list(set(re.findall(r'(?<=,|")[\u4e00-\u9fcc()]+(?=,|")', co_names_json)))
     #     return all_co_names
@@ -71,7 +71,7 @@ class tokenization():
 
             for index, result_row in enumerate(res_rows):
 
-                for indi, res_value in enumerate(re.split('\t', result_row)):
+                for indi, res_value in enumerate(re.split(r'\t', result_row)):
                     if indi in [0, 1, 4, 5]:
                         continue
                     res_value_list = res_value.split('、')
@@ -93,7 +93,7 @@ class tokenization():
                                 # 对应的简称满足几个条件： 包含在全程里面，不长于4个字，不等于
                                 for niki_split in niki_split_list:
                                     if re.search(re.sub(r'(?<=[^屄\s])', '\s?', fullna_first), niki_split)\
-                                            and not re.search(r'(^公司$|^本公司$|^上市公司$|人$|资产|标的|交易|对方|发行|对象|股东|对手|单位)',re.sub(r'\s', '', niki_split)):
+                                            and not re.search(r'(^公司$|^本公司$|环境$|^上市公司$|人$|资产|标的|交易|对方|发行|对象|股东|对手|单位)',re.sub(r'\s', '', niki_split)):
                                         res_paired[str(index)+str(indi)].append(niki_split)
 
 
@@ -103,6 +103,8 @@ class tokenization():
             words = self.segmentor.segment(i)
             words = ' '.join(words)
             words = words+' '+'。'+' '  # 加上句号以及句号后面的空格
+            # 分词要使用更好的策略,更长一些,避免太短的句子,重复循环浪费流程
+            # # 下面是把所有目标主体合并在一起, 把55%股权这样的先分出来,
             # for ent in entities:
             #     # 把words中所有是实体的中间去掉空格。使用双层sub
             #     # 正则还是要多注释啊
@@ -116,7 +118,7 @@ class tokenization():
             #             patt_ent = re.sub(r'(?<=\w)(?=\w)',r'\s?', re.sub(r'的?[\d.]+%的?(股权|股份|权益)','', ent))
             #         else:
             #             patt_ent = re.sub(r'(?<=\w)(?=\w)', r'\s?', ent)
-            #         # 下面一句把words中所有符合主体列表的项目，可能被分词分开的，重新合并起来，单独成行
+            #         # 下面一句把words中所有符合主体列表的项目，可能被分词分开的，重新合并起来，单独成行,在test时使用
             #         words = re.sub(r'{}'.format(patt_ent), '\s' + ent + '\s', words)
 
             # 然后把空格都换成回车,words竖起来了。
@@ -135,7 +137,7 @@ class tokenization():
                 for sub_res in sorted(tags_list, key=len, reverse=True):
                     if not index.endswith('0') and len(sub_res) > 1:
                         patt_sub_res = re.sub(r'(?<=[^屄\s])', '\s?', sub_res)
-                        if re.search(patt_sub_res, words):
+                        if re.search(r'{}'.format(patt_sub_res), words):
                             spliter = re.findall(patt_sub_res, words)[0]
                             words_split_list = re.split(spliter, words)
                             spliter_tagged = re.sub(r'\s', '屄{}'.format(index[1]), spliter)
@@ -152,7 +154,7 @@ class tokenization():
             words_n_words += words
 
             # print(words)
-        with open('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+res_paired['00'][0]+'.txt', 'w') as af:
+        with open('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+res_paired['00'][0]+'.txt', 'w') as af:
             af.write(words_n_words)
             print(path11.split("/")[-1])
             # print(words)
@@ -161,7 +163,33 @@ class tokenization():
 
 
 if __name__=="__main__":
-    path1 = "/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
+    path_in = "/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
+    path_out = '/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'
     tnt = tokenization()
-    for i in os.listdir(path1)[1336:]:
-        tnt.tokenize_enti(path1+i)
+    done_list = os.listdir(path_out)
+    comming_list = os.listdir(path_in)
+    for i in comming_list[1667:]:
+        dest_name = i.split('.')[0]+'.txt'
+        if dest_name in done_list:
+            continue
+        else:
+            print("now it comes {}".format(i))
+            tnt.tokenize_enti(path_in+i)
+
+# def tokenit(path):
+#     path1 = path
+#     tnt = tokenization()
+#     for htm in os.listdir(path1):
+#         tnt.tokenize_enti(path1+htm)
+
+
+# # 改成多进程的，方便在阿里云高效运行
+# if __name__=="__main__":
+#     import multiprocessing as mp
+#     process_jobs = []
+#     path = "/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
+#     for i in range(5):
+#         p = mp.Process(target=tokenit(path))
+#         process_jobs.append(p)
+#         p.start()
+#         p.join()

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="root@192.168.50.8:22" showEqualInSync="true">
     <serverData>
-      <paths name="root@192.168.50.8:22">
+      <paths name="47_7@47.99.40.166:22">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>

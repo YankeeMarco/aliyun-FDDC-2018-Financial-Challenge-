@@ -1,6 +1,6 @@
 
 
-with open(r"/home/mm/Downloads/round1_train_20180518/hetong/hetong.train","r") as rfile:
+with open(r"/home/47_7/Downloads/round1_train_20180518/hetong/hetong.train","r") as rfile:
 
     count=0
     while count<1000:
@@ -13,13 +13,13 @@ with open(r"/home/mm/Downloads/round1_train_20180518/hetong/hetong.train","r") a
         else :
             print("aha {}, the row is {}".format(len(line.split("\t")),line))
 
-cd /home/mm/aliyunChallenge/ import re, os ,html2text pattern = re.compile(r"[^。]+交易对方[^。]+。") notin = 0 for i in os.listdir("/home/mm/FDDC_datasets_dir/FDDC_announcement_round2_chongzu_pdf"): lll = re.findall(pattern, convert2txt("/home/mm/FDDC_datasets_dir/FDDC_announcement_round2_chongzu_pdf/"+i,)) lent = len(lll) if lent > 0: print(lll[0]+" "+str(lent)) else: print("8888888888888888888 "+i) notin +=1
+cd /home/47_7/aliyunChallenge/ import re, os ,html2text pattern = re.compile(r"[^。]+交易对方[^。]+。") notin = 0 for i in os.listdir("/home/47_7/FDDC_datasets_dir/FDDC_announcement_round2_chongzu_pdf"): lll = re.findall(pattern, convert2txt("/home/47_7/FDDC_datasets_dir/FDDC_announcement_round2_chongzu_pdf/"+i,)) lent = len(lll) if lent > 0: print(lll[0]+" "+str(lent)) else: print("8888888888888888888 "+i) notin +=1
 
 import re, os ,html2text
 pattern = re.compile(r"[^。|]+交易对方[^。|]+元[^。|]?。")
 notin = 0
-for i in os.listdir("/home/mm/FDDC_datasets_dir/FDDC_announcement_round2_chongzu_pdf"):
-    lll = re.findall(pattern, convert2txt("/home/mm/FDDC_datasets_dir/FDDC_announcement_round2_chongzu_pdf/"+i,))
+for i in os.listdir("/home/47_7/FDDC_datasets_dir/FDDC_announcement_round2_chongzu_pdf"):
+    lll = re.findall(pattern, convert2txt("/home/47_7/FDDC_datasets_dir/FDDC_announcement_round2_chongzu_pdf/"+i,))
     lent = len(lll)
     if lent > 0:
         print(lll[0]+"         "+str(lent))

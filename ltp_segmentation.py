@@ -6,7 +6,7 @@ from htmlconvert2text import  convert2txt
 from pyltp import NamedEntityRecognizer
 from pyltp import Postagger
 # from pyltp import SentenceSplitter
-LTP_DATA_DIR = "/home/mm/Downloads/ltp_data_v3.4.0/"
+LTP_DATA_DIR = "/home/47_7/Downloads/ltp_data_v3.4.0/"
 ner_model_path = os.path.join(LTP_DATA_DIR, 'ner.model')
 recognizer = NamedEntityRecognizer() # 初始化实例
 recognizer.load(ner_model_path)
@@ -14,8 +14,8 @@ pos_model_path = os.path.join(LTP_DATA_DIR, 'pos.model')  # 词性标注模型�
 
 cws_model_path = os.path.join(LTP_DATA_DIR, 'cws.model')
 
-source_path="/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
-out_path="/home/mm/FDDC_datasets_text_dir/chongzu/"
+source_path="/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
+out_path="/home/47_7/FDDC_datasets_text_dir/chongzu/"
 listdir = os.listdir(source_path)
 postagger = Postagger() # 初始化实例
 postagger.load(pos_model_path)  # 加载模型
@@ -45,7 +45,7 @@ for i in listdir[0:1]:
     for i in new_list:
         print(i)
 
-    with open("/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/seg_test_while_totalwords.txt", "w") as wf:
+    with open("/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/seg_test_while_totalwords.txt", "w") as wf:
         # wf.write(str(list(words)))
         wf.write("".join(new_list))
 segmentor.release()  # 释放模型

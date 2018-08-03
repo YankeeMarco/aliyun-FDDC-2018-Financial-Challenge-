@@ -4,12 +4,12 @@ import time
 
 # time.sleep(8000)
 # def data_generator_x():
-#     for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
-#         x,y =  tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+#     for  i in  os.listdir('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
+#         x,y =  tokenit('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
 #         yield x
 # def data_generator_y():
-#     for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
-#         x,y = tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+#     for  i in  os.listdir('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'):
+#         x,y = tokenit('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
 #         yield y
 def tokenit(path1):
     with open(path1,'r') as rf:
@@ -21,16 +21,16 @@ def tokenit(path1):
 x_train = []
 y_train =[]
 
-for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/')[:1000]:
-    x,y =  tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+for  i in  os.listdir('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/')[:1000]:
+    x,y =  tokenit('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
     x_train += x
     y_train += y
 
 trainer = pycrfsuite.Trainer(verbose=True)
 # x = data_generator_x()
 # # y = data_generator_y()
-# for i in range(2770):
-trainer.append(x_train, y_train)
+for i in range(700):
+    trainer.append(x_train, y_train)
 
  # Submit training data to the trainer
 # for xseq, yseq in zip(x_train, y_train):
@@ -38,21 +38,21 @@ trainer.append(x_train, y_train)
 #     trainer.append(xseq, yseq)
 
 # Set the parameters of the model
-trainer.set_params({
-    # coefficient for L1 penalty
-    'c1': 0.1,
+    trainer.set_params({
+        # coefficient for L1 penalty
+        'c1': 0.1,
 
-    # coefficient for L2 penalty
-    'c2': 0.01,
+        # coefficient for L2 penalty
+        'c2': 0.01,
 
-    # maximum number of iterations
-    'max_iterations': 200,
+        # maximum number of iterations
+        'max_iterations': 200,
 
-    # whether to include transitions that
-    # are possible, but not observed
-    'feature.possible_transitions': True
-})
+        # whether to include transitions that
+        # are possible, but not observed
+        'feature.possible_transitions': True
+    })
 
-# Provide a file name as a parameter to the train function, such that
-# the model will be saved to the file when training is finished
-trainer.train('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/crf.model')
+    # Provide a file name as a parameter to the train function, such that
+    # the model will be saved to the file when training is finished
+    trainer.train('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/crf.model')
