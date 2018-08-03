@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9139a65-9f95-44fc-a0fb-f3898c9a7c79" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/aliyun-FDDC-2018-Financial-Challenge-.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aliyun-FDDC-2018-Financial-Challenge-.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nerw2.py" beforeDir="false" afterPath="$PROJECT_DIR$/nerw2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,6 +87,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="advanced_tutorial.py" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Downloads/cs224_standford_NLP_deeplearning/advanced_tutorial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="302" column="84" lean-forward="true" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="86" />
+              <folding>
+                <element signature="e#5486#5498#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="check_regex_outputs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/check_regex_outputs.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nerw2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nerw2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nerw2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="192">
               <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
@@ -260,7 +268,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/python-crfsuite-master" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/cs224_standford_NLP_deeplearning/advanced_tutorial.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -431,15 +439,15 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32956383" />
       <window_info anchor="bottom" id="Python Console" order="13" weight="0.32956383" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.28271407" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.35864297" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35815603" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.054814816" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.3288889" />
       <window_info anchor="right" id="SciView" order="5" weight="0.3288889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49960908" visible="true" weight="0.31117022" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49960908" weight="0.31117022" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -525,16 +533,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tokenization_seg_whole.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3287">
-          <caret line="176" selection-start-line="176" selection-end-line="176" />
-          <folding>
-            <element signature="e#14#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/1236336389/2020033751/codecs.py" />
     <entry file="file://$PROJECT_DIR$/seg_test.tex" />
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/remote_sources/1236336389/2020033751/re.py" />
@@ -695,10 +693,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nerw2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="192">
           <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/cs224_standford_NLP_deeplearning/advanced_tutorial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="302" column="84" lean-forward="true" selection-start-line="302" selection-start-column="4" selection-end-line="302" selection-end-column="86" />
+          <folding>
+            <element signature="e#5486#5498#0" expanded="true" />
           </folding>
         </state>
       </provider>
