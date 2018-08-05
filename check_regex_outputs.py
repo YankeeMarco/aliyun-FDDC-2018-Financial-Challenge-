@@ -220,6 +220,39 @@ def catch_trick88():
                     print(res_find)
                 else:
                     print("@@@")
+
+def catch_trick888():
+    from htmlconvert2text import convert2txt
+    # def read_train_res():
+    #     with open('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
+    #         train_res = rf.read()
+    #     return train_res
+    #
+    # train_re = read_train_res()
+
+    for i in os.listdir('/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[
+             0:2688:18]:
+        # sss = convert2txt('/home/html/' + i)
+        sss, ent_str = convert2txt("/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/" + i)
+        if len(ent_str) > 10:
+            with open('checkregexentity.txt' , 'a') as af:
+                af.write(ent_str + "\n")
+            print("OOOOOOOOOOO")
+        else:
+            print(i)
+        # row_train_re = re.search(r'{}[^\n。]+\n'.format(i.split(".")[0]), train_re).group()[:-1]
+        # print("###########################################################{}".format(i))
+        # for index, res_enti in enumerate(row_train_re.split('\t')):
+        #
+        #     if len(res_enti) > 1:
+        #         print("@@@this is the {}th key_value{}".format(index, res_enti))
+        #         res_find = re.findall(r'{}'.format(res_enti), ent_str)
+        #
+        #         if len(res_find) > 0:
+        #             print(res_find)
+        #         else:
+        #             print("@@@")
+
 if __name__=='__main__':
-    catch_trick5()
+    catch_trick888()
     # check_original_sentences()

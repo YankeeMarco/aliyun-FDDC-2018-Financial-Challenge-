@@ -35,16 +35,19 @@ def convert2txt(path1):
         first = i.split("</")[0]
         third = i.split(">")[-1]
         entity_string+=first
-        entity_string+='~'
+        entity_string+='H&#~'
         entity_string+=third
         entity_string+=' '
-
+    entity_string += "|||"
     for i in list_target:
         entity_string += i
         entity_string += ' '
+    entity_string += "|||"
     for i in list_eval_way:
         entity_string += i
         entity_string += ' '
+    entity_string += "|||"
+
 
 
     texx = re.sub(r'<[^<>]+>', r'\n', texx) # 把所有html标签换成一对空格，多了很多换行符,有嵌套标签，需要再删一遍
@@ -79,7 +82,7 @@ def convert2txt(path1):
     texx = re.sub(r'[\s\n]+', ' ', texx) # 把可能产生的连续空格换成一个空格，应该没有执行啥吧
     # texx = re.sub(r'\n+', ' ', texx) # 把连续的换行全部换成一个空格
     # html文件中普遍有一个乱码：ft 是汉字的山
-    texx = re.sub(u'ft', u'山', texx)
+    texx = re.sub(r'ft', r'山', texx)
     # 英文半角括号换成汉语全角括号，以防正则bug
     texx = re.sub(r'\(','（', texx)
     texx = re.sub(r'\)', '）', texx)
