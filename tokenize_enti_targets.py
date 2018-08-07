@@ -7,7 +7,7 @@ from htmlconvert2text import convert2txt
 
 class tokenization():
     def __init__(self):
-        self.LTP_DATA_DIR = "/home/47_7/Downloads/ltp_data_v3.4.0/"
+        self.LTP_DATA_DIR = "/home/mm/Downloads/ltp_data_v3.4.0/"
         self.cws_model_path = os.path.join(self.LTP_DATA_DIR, 'cws.model')
 
         self.segmentor = Segmentor()  # 初始化实例
@@ -16,7 +16,7 @@ class tokenization():
         # self.all_co_names = self.FDDC_co_list()
 
     def read_train_res(self):
-        with open('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
+        with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
             train_res = rf.read()
             train_res = re.sub(r'\(', '（', train_res)
             train_res = re.sub(r'\)', '）', train_res)
@@ -27,7 +27,7 @@ class tokenization():
     #     这里是用正则把所有上市公司简称/全称/历史名称都提取出来。
     #     :return: 生成的list
     #     """
-    #     with open('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/FDDC_announcements_company_name_20180531.json','r') as rf:
+    #     with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/FDDC_announcements_company_name_20180531.json','r') as rf:
     #         co_names_json = rf.read()
     #     all_co_names = list(set(re.findall(r'(?<=,|")[\u4e00-\u9fcc()]+(?=,|")', co_names_json)))
     #     return all_co_names
@@ -154,7 +154,7 @@ class tokenization():
             words_n_words += words
 
             # print(words)
-        with open('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+res_paired['00'][0]+'.txt', 'w') as af:
+        with open('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+res_paired['00'][0]+'.txt', 'w') as af:
             af.write(words_n_words)
             print(path11.split("/")[-1])
             # print(words)
@@ -163,8 +163,8 @@ class tokenization():
 
 
 if __name__=="__main__":
-    path_in = "/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
-    path_out = '/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'
+    path_in = "/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
+    path_out = '/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'
     tnt = tokenization()
     done_list = os.listdir(path_out)
     comming_list = os.listdir(path_in)
@@ -187,7 +187,7 @@ if __name__=="__main__":
 # if __name__=="__main__":
 #     import multiprocessing as mp
 #     process_jobs = []
-#     path = "/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
+#     path = "/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
 #     for i in range(5):
 #         p = mp.Process(target=tokenit(path))
 #         process_jobs.append(p)

@@ -71,9 +71,9 @@ def check_original_sentences():
 def catch_trick2():
     pattern = re.compile(r'(?<=(\.\d))\d{0,6}(\s{0,3}万元)', flags=re.X)
 
-    for i in os.listdir('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
+    for i in os.listdir('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
         # sss = convert2txt('/home/html/' + i)
-        with open("/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
+        with open("/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
             sss = rf.read()
             print("{}       ####################################\n".format(i))
             reg_out = re.findall(pattern, sss)
@@ -85,9 +85,9 @@ def catch_trick2():
 def catch_trick3():
     pattern = re.compile(r'美元', flags=re.X)
 
-    for i in os.listdir('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
+    for i in os.listdir('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
         # sss = convert2txt('/home/html/' + i)
-        with open("/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
+        with open("/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
             sss = rf.read()
             print("{}       ####################################\n".format(i))
             reg_out = re.findall(pattern, sss)
@@ -100,9 +100,9 @@ def catch_trick3():
 def catch_trick4():
     pattern = re.compile(r'((?:[^\d.,;()]{3,8}指[^\d.,;()]{8,18}\n+)(?:[^\d.,;()]{3,8}指[^\d.,;()]{8,18}\n+)(?:[^\d.,;()]{3,8}指[^\d.,;()]{8,18}\n+))', flags=re.X)
 
-    for i in os.listdir('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
+    for i in os.listdir('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/'):
         # sss = convert2txt('/home/html/' + i)
-        with open("/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
+        with open("/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"+i,'r') as rf:
             sss = rf.read()
         print("{}       ####################################\n".format(i))
         reg_out = re.findall(pattern, sss)
@@ -118,9 +118,9 @@ def catch_trick5():
 
     with open('entity_string_test.txt','a') as af:
 
-        for i in os.listdir('/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2770:10]:
+        for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2770:10]:
             # sss = convert2txt('/home/html/' + i)
-            with open("/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
+            with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
                 sss = rf.read()
             print("{}       ####################################\n".format(i))
             sss = re.sub(r'[\s\n]', '', sss)  # 把所有空格回车去掉，表格的变动信息不要了，此任务不需要
@@ -138,9 +138,9 @@ def catch_trick5():
 def catch_trick6():
 
 
-    for i in os.listdir('/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
         # sss = convert2txt('/home/html/' + i)
-        with open("/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
+        with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
             sss = rf.read()
 
         sss = re.sub(r'[\s\n]', '', sss)  # 把所有空格回车去掉，表格的变动信息不要了，此任务不需要
@@ -154,9 +154,9 @@ def catch_trick6():
 
 def catch_trick7():
 
-    for i in os.listdir('/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/'):
         # sss = convert2txt('/home/html/' + i)
-        with open("/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
+        with open("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i,'r') as rf:
             sss = rf.read()
 
         sss = re.sub(r'[\s\n]', '', sss)  # 把所有空格回车去掉，表格的变动信息不要了，此任务不需要
@@ -171,14 +171,14 @@ def catch_trick7():
 def catch_trick8():
     from htmlconvert2text import convert2txt
     def read_train_res():
-        with open('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
+        with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
             train_res = rf.read()
         return train_res
     train_re = read_train_res()
 
-    for i in os.listdir('/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2000:20]:
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[0:2000:20]:
         # sss = convert2txt('/home/html/' + i)
-        sss,_ = convert2txt("/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i)
+        sss,_ = convert2txt("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"+i)
 
 
         row_train_re = re.search(r'{}[^\n。]+\n'.format(i.split(".")[0]),train_re).group()[:-1]
@@ -197,16 +197,16 @@ def catch_trick8():
 def catch_trick88():
     from htmlconvert2text import convert2txt
     def read_train_res():
-        with open('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
+        with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
             train_res = rf.read()
         return train_res
 
     train_re = read_train_res()
 
-    for i in os.listdir('/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[
              0:2000:20]:
         # sss = convert2txt('/home/html/' + i)
-        sss, ent_str = convert2txt("/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/" + i)
+        sss, ent_str = convert2txt("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/" + i)
 
         row_train_re = re.search(r'{}[^\n。]+\n'.format(i.split(".")[0]), train_re).group()[:-1]
         print("###########################################################{}".format(i))
@@ -224,16 +224,16 @@ def catch_trick88():
 def catch_trick888():
     from htmlconvert2text import convert2txt
     # def read_train_res():
-    #     with open('/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
+    #     with open('/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/chongzu.train') as rf:
     #         train_res = rf.read()
     #     return train_res
     #
     # train_re = read_train_res()
 
-    for i in os.listdir('/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[
+    for i in os.listdir('/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/')[
              0:2688:18]:
         # sss = convert2txt('/home/html/' + i)
-        sss, ent_str = convert2txt("/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/" + i)
+        sss, ent_str = convert2txt("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/" + i)
         if len(ent_str) > 10:
             with open('checkregexentity.txt' , 'a') as af:
                 af.write(ent_str + "\n")

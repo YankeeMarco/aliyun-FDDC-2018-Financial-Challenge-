@@ -11,8 +11,8 @@ def tokenit(path1):
 x_train = []
 y_train =[]
 
-for  i in  os.listdir('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/')[0:3]:
-    x,y =  tokenit('/home/47_7/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
+for  i in  os.listdir('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/')[0:3]:
+    x,y =  tokenit('/home/mm/FDDC_datasets_dir/tokenized_datasets_for_anago/chongzu/'+i)
     if len(x)==len(y):
         x_train += x
         y_train += y

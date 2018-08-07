@@ -24,6 +24,8 @@ def convert2txt(path1):
     """
     # 先将html中的回车空格等等符号去掉
     texx = re.sub(r'[\s\n]', r'', texx)  # 把html中所有空格回车去掉，防止文档差错，表格的数据信息不要了，此任务不需要
+    # html文件中普遍有一个乱码：ft 是汉字的山
+    texx = re.sub(r'(?<![a-zA-Z])ft(?![a-zA-Z])', "山", texx)
     list_entity = re.findall(r'(?<=>)[^<>]+[></a-z]+指[></a-z]+[^<>]+', texx)
     # list_entity = re.findall(r'<td>[^<>]+</td><td>指</td><td>[^<>]+</td>',texx) # 很容易找出实体指代部分了
     # list_money = re.findall(r'(\d{5,12})(?=元)', texx)
@@ -81,8 +83,6 @@ def convert2txt(path1):
     texx = re.sub(r'(\n+指\n+|指\n)', ' 指 ', texx) # 把“指”两边多余的换行符去掉
     texx = re.sub(r'[\s\n]+', ' ', texx) # 把可能产生的连续空格换成一个空格，应该没有执行啥吧
     # texx = re.sub(r'\n+', ' ', texx) # 把连续的换行全部换成一个空格
-    # html文件中普遍有一个乱码：ft 是汉字的山
-    texx = re.sub(r'ft', r'山', texx)
     # 英文半角括号换成汉语全角括号，以防正则bug
     texx = re.sub(r'\(','（', texx)
     texx = re.sub(r'\)', '）', texx)
@@ -99,11 +99,11 @@ def conv_and_save(path1, path2):
     with open(path2,"w") as wf:
         wf.write(convert2txt(path1))
 if __name__=="__main__":
-    source_path = r"/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
-    out_path = r"/home/47_7/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"
+    source_path = r"/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/"
+    out_path = r"/home/mm/Documents/aliyun-FDDC-2018-Financial-Challenge-/test_text_dir/"
     for i in os.listdir(source_path)[0:2770:50]:
 
-        text, entity_string = convert2txt("/home/47_7/FDDC_datasets_dir/FDDC_announcements_round2_train_html/1058852.html")
+        text, entity_string = convert2txt("/home/mm/FDDC_datasets_dir/FDDC_announcements_round2_train_html/1058852.html")
         text, entity_string = convert2txt(source_path+i)
         with open(out_path+"text"+i.split(".")[0], "w") as f:
              f.write(text)
